@@ -4,7 +4,7 @@ evaluating formulae, this one also automatically converts your formulae into Pol
 Prefix) Notation as you type. For information on Polish Notation, see [this](https://en.wikipedia.org/wiki/Polish_notation).
 
 ## License
-Note that this web app is being licensed under the GNU GPLv3. See [here](https://github.com/thomas-m-d/FCCPortfolioProjects/blob/master/LICENSE.md) for full
+Note that this web app is being licensed under the GNU GPLv3. See `LICENSE.md` for full
 license text.
 
 ## FreeCodeCamp Info
