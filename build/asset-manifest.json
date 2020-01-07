@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/learn-polish-calc/static/css/main.5e677c04.chunk.css",
+    "main.js": "/learn-polish-calc/static/js/main.6eec78ac.chunk.js",
+    "main.js.map": "/learn-polish-calc/static/js/main.6eec78ac.chunk.js.map",
+    "runtime-main.js": "/learn-polish-calc/static/js/runtime-main.60257347.js",
+    "runtime-main.js.map": "/learn-polish-calc/static/js/runtime-main.60257347.js.map",
+    "static/js/2.78700181.chunk.js": "/learn-polish-calc/static/js/2.78700181.chunk.js",
+    "static/js/2.78700181.chunk.js.map": "/learn-polish-calc/static/js/2.78700181.chunk.js.map",
+    "index.html": "/learn-polish-calc/index.html",
+    "precache-manifest.922efad7279c012eb5dc6f9cdcf4004f.js": "/learn-polish-calc/precache-manifest.922efad7279c012eb5dc6f9cdcf4004f.js",
+    "service-worker.js": "/learn-polish-calc/service-worker.js",
+    "static/css/main.5e677c04.chunk.css.map": "/learn-polish-calc/static/css/main.5e677c04.chunk.css.map",
+    "static/js/2.78700181.chunk.js.LICENSE": "/learn-polish-calc/static/js/2.78700181.chunk.js.LICENSE",
+    "static/media/App.scss": "/learn-polish-calc/static/media/digital-7 (mono).58045dab.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.60257347.js",
+    "static/js/2.78700181.chunk.js",
+    "static/css/main.5e677c04.chunk.css",
+    "static/js/main.6eec78ac.chunk.js"
+  ]
+}

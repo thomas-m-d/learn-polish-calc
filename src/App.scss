@@ -1,0 +1,332 @@
+@font-face {
+    font-family: Digital7;
+    src: url('./fonts/digital-7 (mono).ttf');
+}
+
+@font-face {
+    font-family: Digital7;
+    src: url('./fonts/digital-7 (mono italic).ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: RobotoCondensed;
+    src: url('./fonts/RobotoCondensed-Regular.ttf')
+}
+
+@font-face {
+    font-family: RobotoCondensedLight;
+    font-style: bold;
+    src: url('./fonts/RobotoCondensed-Bold.ttf')
+}
+
+@font-face {
+    font-family: RobotoCondensedLight;
+    src: url('./fonts/RobotoCondensed-Light.ttf')
+}
+
+@font-face {
+    font-family: Bitwise;
+    src: url('./fonts/bitwise.ttf');
+}
+
+.App {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#calcGrid {
+    width: 45%;
+    height: 80%;
+    min-width: 460px;
+    max-width: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 10em;
+    display: grid;
+    grid-template-columns: 2% 15% 15% 15% 15% 15% 15% 2%;
+    grid-template-rows: auto 4em .01em 4em .01em 4em 4em 4em 4em 4em 1em;
+    grid-template-areas:
+        "spacingLeft titleHelp titleHelp titleHelp titleHelp titleHelp titleHelp spacingRight"
+            "spacingLeft infix infix infix infix infix infix spacingRight"
+            "spacingLeft spacingIP spacingIP spacingIP spacingIP spacingIP spacingIP spacingRight"
+            "spacingLeft polish polish polish polish polish polish spacingRight"
+            "spacingLeft spacingPR spacingPR spacingPR spacingPR spacingPR spacingPR spacingRight"
+            "spacingLeft result result result result result result spacingRight"
+            "spacingLeft add subtract one two three backspace spacingRight"
+            "spacingLeft multiply divide four five six clear spacingRight"
+            "spacingLeft exponent negative seven eight nine equals spacingRight"
+            "spacingLeft leftParen rightParen decimal zero zero equals spacingRight"
+            "spacingBottom spacingBottom spacingBottom spacingBottom spacingBottom spacingBottom spacingBottom spacingBottom ";
+    grid-gap: .25em .25em;
+    background-color: #fff7f2;
+    border: 5px;
+    border-style: ridge groove groove ridge;
+    border-color: #f0eecb;
+    border-radius: 10px;
+}
+
+.titleAndHelpFlexBox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 1.5em 0 0 0;
+}
+
+.title {
+    display: inline-block;
+    margin: 0;
+    font-family: Bitwise;
+    font-size: xxx-large;
+}
+
+.helpButton {
+    width: 7em;
+    padding: .5em 0;
+    font-size: medium;
+    color: #e6eef2;
+    background-color: #726444;
+    font-family: RobotoCondensed;
+    font-weight: normal;
+    margin-bottom: .75em;
+}
+
+.help {
+    font-family: RobotoCondensedLight;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+.numberButton, .operatorButton, .parenButton, .functionButton {
+    width: 90%;
+    height: 90%;
+    padding: 0;
+    margin: 0;
+}
+
+.functionButton {
+    height: 100%;
+}
+
+.characterInputButtonDiv, .performFunctionButtonDiv {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.characterInputButton, .performFunctionButton {
+    width: 95%;
+    height: 95%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    padding: 0;
+    font-family: Bitwise;
+    font-size: x-large;
+}
+
+#leftParenDiv, #rightParenDiv {
+    width: 100%;
+    height: 100%;
+}
+
+#zero {
+    width: 97.5%;
+    margin-top: 1.25%;
+    margin-bottom: auto;
+}
+
+.numberButton, .operatorButton {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.formulaInputField, .resultField {
+    display: flex;
+    width: initial;
+    height: 95%;
+    width: 100%;
+    border: 3px inset black;
+    border-radius: 5px;
+    font-family: Digital7;
+    font-size: xxx-large;
+    background-color: #e6eef2;
+    color: #3d3d4c;
+    text-align: right;
+    justify-content: right;
+}
+
+.resultField {
+    font-style: italic;
+}
+
+#infixInput, #polishInput, #resultP {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1.25em;
+}
+
+.resultField {
+    height: 85%;
+    margin-bottom: 15%;
+}
+
+#titleAndHelpDiv {
+    grid-area: titleHelp;
+}
+
+#infixInputDiv {
+    grid-area: infix;
+}
+
+#polishInputDiv {
+    grid-area: polish;
+}
+
+#resultFieldDiv {
+    grid-area: result;
+}
+
+#zeroDiv {
+    grid-area: zero;
+}
+
+#oneDiv {
+    grid-area: one;
+}
+
+#twoDiv {
+    grid-area: two;
+}
+
+#threeDiv {
+    grid-area: three;
+}
+
+#fourDiv {
+    grid-area: four;
+}
+
+#fiveDiv {
+    grid-area: five;
+}
+
+#sixDiv {
+    grid-area: six;
+}
+
+#sevenDiv {
+    grid-area: seven;
+}
+
+#eightDiv {
+    grid-area: eight;
+}
+
+#nineDiv {
+    grid-area: nine;
+}
+
+#decimalDiv {
+    grid-area: decimal;
+}
+
+#addDiv {
+    grid-area: add;
+}
+
+#subtractDiv {
+    grid-area: subtract;
+}
+
+#multiplyDiv {
+    grid-area: multiply;
+}
+
+#divideDiv {
+    grid-area: divide;
+}
+
+#exponentDiv {
+    grid-area: exponent;
+}
+
+#negativeDiv {
+    grid-area: negative;
+}
+
+#leftParenDiv {
+    grid-area: leftParen;
+}
+
+#rightParenDiv {
+    grid-area: rightParen;
+}
+
+#backspaceDiv {
+    grid-area: backspace;
+}
+
+#clearDiv {
+    grid-area: clear;
+}
+
+#equalsDiv {
+    grid-area: equals;
+}
+
+
+#add, #subtract, #multiply, #divide, #exponent, #negative {
+    background-color: #5282cc;
+    border-radius: 50px;
+    border-width: 2px;
+    border-color: #3464ae;
+    border-style: outset;
+
+}
+
+#leftParen, #rightParen {
+    background-color: #b2d1ff;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: #b9c8e1;
+    border-style: outset;
+}
+
+#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #decimal {
+    background-color: #fffff7;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: #e1e1D9;
+    border-style: outset;
+}
+
+#backspace {
+    background-color: #ff7b60;
+    border-radius: 50px;
+    border-width: 2px;
+    border-color: #e15d42;
+    border-style: outset;
+}
+
+#clear {
+    background-color: #ff4019;
+    border-radius: 50px;
+    border-width: 2px;
+    border-color: #e12200;
+    border-style: outset;
+}
+
+#equals {
+    background-color: #7fcc5c;
+    border-radius: 65px;
+    border-width: 2px;
+    border-color: #61ae3e;
+    border-style: outset;
+}

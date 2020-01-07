@@ -1,0 +1,3 @@
+export const CHARACTERINPUT = "CHARACTERINPUT";
+export const PERFORMFUNCTION = "PERFORMFUNCTION";
+export const HELP = "HELP";
